@@ -1,7 +1,8 @@
+import logging
 import sys
 import unittest
 from unittest.mock import MagicMock, patch
-import logging
+
 from utils.logger import Logger
 
 

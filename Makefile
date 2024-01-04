@@ -31,6 +31,12 @@ test:
 lint:
 	.venv/bin/pylint src/ tests/ --errors-only
 
+# Sort imports / format code
+.PHONY: format
+format:
+	.venv/bin/isort src/ tests/
+	.venv/bin/black src/ tests/
+
 # Clean up all temporary files (including .venv)
 .PHONY: clean
 clean:
